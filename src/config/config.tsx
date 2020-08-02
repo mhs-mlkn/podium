@@ -1,6 +1,7 @@
 import { lazy } from "react";
 import { AppConfig } from "react-fanap";
 import routes from "./routes";
+import Loading from "components/Loading";
 
 const LandingAsync = lazy(() => import("components/Landing"));
 
@@ -39,7 +40,9 @@ const config: AppConfig = {
     ]
   },
   routes,
-  components: {}
+  components: {
+    Loading
+  }
 };
 
 export default config;
